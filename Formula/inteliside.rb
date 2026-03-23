@@ -5,21 +5,21 @@
 class Inteliside < Formula
   desc "CLI del Marketplace de Plugins Inteliside para Claude Code"
   homepage "https://github.com/Intelliaa/inteliside-cli"
-  version "1.4.0"
+  version "1.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Intelliaa/inteliside-cli/releases/download/v1.4.0/inteliside_1.4.0_darwin_amd64.tar.gz"
-      sha256 "a159989a9327a213006ee8b08828bbd8dfd44b2a10e9466b9a6c7e8ac8968b42"
+      url "https://github.com/Intelliaa/inteliside-cli/releases/download/v1.5.0/inteliside_1.5.0_darwin_amd64.tar.gz"
+      sha256 "7bde51f6888542a3a8a8688ea519750933035481bdd89d4ab0138f4470cfb3d3"
 
       define_method(:install) do
         bin.install "inteliside"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Intelliaa/inteliside-cli/releases/download/v1.4.0/inteliside_1.4.0_darwin_arm64.tar.gz"
-      sha256 "8848c0fb5b4fcca69ce869af5f876151362f9519d0e5c0b9498552d2709f73e4"
+      url "https://github.com/Intelliaa/inteliside-cli/releases/download/v1.5.0/inteliside_1.5.0_darwin_arm64.tar.gz"
+      sha256 "c6ff2cd8264e69129c730956a05f2a2fa45cede7d41527ec03f0d8e48dc0bcfd"
 
       define_method(:install) do
         bin.install "inteliside"
@@ -29,15 +29,15 @@ class Inteliside < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Intelliaa/inteliside-cli/releases/download/v1.4.0/inteliside_1.4.0_linux_amd64.tar.gz"
-      sha256 "e12c2f57ad072a5e714ee5f9bebfef9f0ec5bd7e0074e5ea32beb94455300c03"
+      url "https://github.com/Intelliaa/inteliside-cli/releases/download/v1.5.0/inteliside_1.5.0_linux_amd64.tar.gz"
+      sha256 "2ad643debac08a97bda2319dd8e5699bbbcc62dca68c3ea279f8b5d30aa858f2"
       define_method(:install) do
         bin.install "inteliside"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Intelliaa/inteliside-cli/releases/download/v1.4.0/inteliside_1.4.0_linux_arm64.tar.gz"
-      sha256 "5f27e92e8cd368ec92da1d1ce2b7ea306cb7d6d1d6fe9b35c45523ec4f739402"
+      url "https://github.com/Intelliaa/inteliside-cli/releases/download/v1.5.0/inteliside_1.5.0_linux_arm64.tar.gz"
+      sha256 "1362910ba4be76a76283e6673b78f40f027f801fd8b77aa72c2ee3b1875908bd"
       define_method(:install) do
         bin.install "inteliside"
       end
